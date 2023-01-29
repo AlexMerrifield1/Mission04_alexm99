@@ -1,0 +1,14 @@
+﻿body {
+}
+
+li {
+    list-style-type: decimal-leading-zero;
+}
+
+
+label {
+    font-size: 20px;
+    color: darkorchid;
+    width: 150px;
+    display: inline-block
+}

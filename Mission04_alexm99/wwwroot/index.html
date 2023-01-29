@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mexican Bobble Head Turtles</title>
+    <link rel="icon" type="image/x-icon" href="img/turtle-icon.png" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/mydefault.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>My Preferred Name: Alex</h1>
+    <img id="picAlexSports" src="img/Alex_Sports.jpg" />
+    <p>
+        This semeseter I'm very excited to tackle my fears of learning lots of new things!
+        I know that there are a lot of different types of technologies to learn, but this semester
+        I can't wait to truly feel like I have a grasp on programming, web dev and using data in various ways!
+    </p>
+
+    <h2>My Top 3 jobs post graduation:</h2>
+    <ul>
+        <li>Salesforce Consultant/Administrator</li>
+        <li>Junior Developer</li>
+        <li>Stay at home Dad :)</li>
+    </ul>
+
+
+    <h2>Calculate your Grade Below</h2>
+    <br />
+    <form>
+        <h3>Put your current percentage scored for each grade category</h3>
+        <label for="txtAssignments">Assignments:</label>
+        <input type="number" id="txtAssignments" name="txtAssignments" min="0" max="100" />% <br />
+
+        <label for="txtGroupProject">Group Project:</label>
+        <input type="number" id="txtGroupProject" name="txtGroupProject" min="0" max="100" />% <br />
+
+        <label>Quizzes:</label>
+        <input type="number" id="txtQuizzes" name="txtQuizzes" min="0" max="100" />% <br />
+
+        <label>Midterm Exam:</label>
+        <input type="number" id="txtMidtermExam" name="txtMidtermExam" min="0" max="100" />% <br />
+
+        <label>Final Exam:</label>
+        <input type="number" id="txtFinalExam" name="txtFinalExam" min="0" max="100" />% <br />
+
+        <label>INTEX:</label>
+        <input type="number" id="txtINTEX" name="txtINTEX" min="0" max="100" />% <br />
+
+        <input id="btnSend" type="button" value="Submit Grades" />
+        
+        <br />
+        <label>Final Grade Percentage: </label>
+        <input id="finalPercentage" type="number" disabled />
+        <label>Final Letter Grade: </label>
+        <input id="letterGrade" type="text" disabled />
+
+    </form>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+
+</body>
+</html>
