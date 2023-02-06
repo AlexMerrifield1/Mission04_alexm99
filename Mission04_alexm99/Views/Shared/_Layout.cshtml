@@ -5,20 +5,21 @@
     <meta charset="utf-8" />
     <title>Mexican Bobble Head Turtles</title>
     <link rel="icon" type="image/x-icon" href="img/turtle-icon.png" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/mydefault.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/mydefault.css" rel="stylesheet" />
 </head>
 <body>
     <nav>
-        <a asp-controller="Blah" asp-action="Index">Home</a>
-        <a asp-controller="Blah" asp-action="FanMail">Fan Mail</a>
+        <a asp-controller="Somethin" asp-action="Index">Home</a>
+        <a asp-controller="Somethin" asp-action="GradeCalculator">Grade Calculator</a>
     </nav>
+
     <div>
         @RenderBody()
     </div>
 
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
 </body>
 </html>
 

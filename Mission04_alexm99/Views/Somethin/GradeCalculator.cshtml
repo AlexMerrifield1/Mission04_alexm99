@@ -4,40 +4,38 @@
 @{
 }
 
-@*@model Mission04_alexm99.Models.GradeCalculator*@
-
 @model GradeCalculatorModel;
 
 <h2>Calculate your Grade Below</h2>
 <br />
-<form>
+<form method="post">
     <h3>Put your current percentage scored for each grade category</h3>
     <label for="txtAssignments">Assignments:</label>
-    @*<input type="number" id="txtAssignments" asp-for="Assignments" min="0" max="100" />% <br />*@
-    <input id="txtFrom" asp-for="Assignments"/> <br />
+    <input id="txtAssignments" asp-for="Assignments" />% <br />
 
     <label for="txtGroupProject">Group Project:</label>
-    <input type="number" id="txtGroupProject" asp-for="Group_Project" min="0" max="100" />% <br />
+    <input id="txtGroupProject" asp-for="Group_Project" />% <br />
 
     <label>Quizzes:</label>
-    <input type="number" id="txtQuizzes" asp-for="Quizzes" min="0" max="100" />% <br />
+    <input id="txtQuizzes" asp-for="Quizzes" />% <br />
 
     <label>Midterm Exam:</label>
-    <input type="number" id="txtMidtermExam" asp-for="Midterm_Exam" min="0" max="100" />% <br />
+    <input id="txtMidtermExam" asp-for="Midterm_Exam" />% <br />
 
     <label>Final Exam:</label>
-    <input type="number" id="txtFinalExam" asp-for="Final_Exam" min="0" max="100" />% <br />
+    <input id="txtFinalExam" asp-for="Final_Exam" />% <br />
 
     <label>INTEX:</label>
-    <input type="number" id="txtINTEX" asp-for="INTEX" min="0" max="100" />% <br />
+    <input id="txtINTEX" asp-for="INTEX" />% <br />
 
-    <input id="btnSend" type="button" value="Submit Grades" />
+    <input id="btnSend" type="submit" value="Submit Grades" />
 
     <br />
     <label>Final Grade Percentage: </label>
     <input id="finalPercentage" type="number" disabled />
     <label>Final Letter Grade: </label>
     <input id="letterGrade" type="text" disabled />
+    <div asp-validation-summary="All"></div>
 
 </form>
-<script src="js/GradeCalculator.js"></script>
+<script src="~/js/GradeCalculator.js"></script>
