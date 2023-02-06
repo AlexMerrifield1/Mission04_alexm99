@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*@model Mission04_alexm99.Models.GradeCalculator*@
+
+@model GradeCalculatorModel;
+
+<h2>Calculate your Grade Below</h2>
+<br />
+<form>
+    <h3>Put your current percentage scored for each grade category</h3>
+    <label for="txtAssignments">Assignments:</label>
+    @*<input type="number" id="txtAssignments" asp-for="Assignments" min="0" max="100" />% <br />*@
+    <input id="txtFrom" asp-for="Assignments"/> <br />
+
+    <label for="txtGroupProject">Group Project:</label>
+    <input type="number" id="txtGroupProject" asp-for="Group_Project" min="0" max="100" />% <br />
+
+    <label>Quizzes:</label>
+    <input type="number" id="txtQuizzes" asp-for="Quizzes" min="0" max="100" />% <br />
+
+    <label>Midterm Exam:</label>
+    <input type="number" id="txtMidtermExam" asp-for="Midterm_Exam" min="0" max="100" />% <br />
+
+    <label>Final Exam:</label>
+    <input type="number" id="txtFinalExam" asp-for="Final_Exam" min="0" max="100" />% <br />
+
+    <label>INTEX:</label>
+    <input type="number" id="txtINTEX" asp-for="INTEX" min="0" max="100" />% <br />
+
+    <input id="btnSend" type="button" value="Submit Grades" />
+
+    <br />
+    <label>Final Grade Percentage: </label>
+    <input id="finalPercentage" type="number" disabled />
+    <label>Final Letter Grade: </label>
+    <input id="letterGrade" type="text" disabled />
+
+</form>
+<script src="js/GradeCalculator.js"></script>
