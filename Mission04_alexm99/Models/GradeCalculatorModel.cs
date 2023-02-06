@@ -9,7 +9,6 @@ namespace Mission04_alexm99.Models
     public class GradeCalculatorModel
     {
         //This will build the entire get/set for you
-        [Required]
         [Range (0,100)]
         public string Assignments { get; set; }
         [Range(0, 100)]
